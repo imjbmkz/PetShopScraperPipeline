@@ -1,4 +1,6 @@
 env/
+venvs/
 logs/
 simple_auth_manager_passwords.json.generated
 airflow.cfg
+__pycache__

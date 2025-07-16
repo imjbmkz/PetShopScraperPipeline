@@ -39,6 +39,7 @@ This project sets up and manages an Apache Airflow environment for orchestrating
 ## Usage
 
 - Add your DAGs to the `dags/` directory.
+- Add your custom packages and libraries in `libs/` folder.
 - Monitor and manage workflows via the Airflow web UI (default: http://localhost:8080).
 - Logs are stored in the `logs/` directory.
 
@@ -56,3 +57,6 @@ This project sets up and manages an Apache Airflow environment for orchestrating
 ## License
 
 This project is licensed under the [Apache License 2.0](./LICENSE).
+
+# TODO
+Document the best way of managing virtual environments for multiple projects.
