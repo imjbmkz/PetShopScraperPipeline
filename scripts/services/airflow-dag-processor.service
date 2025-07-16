@@ -1,0 +1,14 @@
+[Unit]
+Description=Airflow DAG Processor
+After=network.target postgresql.service
+
+[Service]
+Environment=AIRFLOW_HOME=/home/josh/airflow
+Environment=AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@localhost/airflow
+ExecStart=/home/josh/airflow/env/bin/airflow dag-processor
+Restart=always
+User=josh
+WorkingDirectory=/home/josh/airflow
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1 @@
+~/airflow/env/bin/airflow db migrate
