@@ -32,3 +32,7 @@ mkdir ~/airflow/plugins
 # Keep these folders available
 touch ~/airflow/dags/.gitkeep
 touch ~/airflow/plugins/.gitkeep
+
+# Create extra directory for jobs
+mkdir ~/airflow/jobs
+touch ~/airflow/jobs/.gitkeep
